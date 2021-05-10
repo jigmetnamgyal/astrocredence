@@ -2,13 +2,14 @@
     position: relative;
     display: flex;
     color: #000000;
-    background-color:#7371fc;
+    /* background-color:red; */
     height: 13vh;
     width: 100vw;
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
     z-index: 20000;
+    /* padding-top: 20px; */
     backdrop-filter: blur(10px);
 }
 
@@ -48,6 +49,8 @@
 }
 .header__navigation > ul > a{
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
 }
 .img_container{
     height: 100%;
@@ -61,7 +64,7 @@
     background-color: #000000;
 }
 .navbarLogo{
-    padding: 15px !important;
+    /* padding: 15px !important; */
     color: #fff !important;
     font-size: 20px !important;
     letter-spacing: 3px;
@@ -92,8 +95,9 @@
 @media screen and (min-width: 915px){
 
     .astroCLogo{
-        width: 250px;
+        width: 200px;
         height: 100%;
+        margin-top: 5px;
     }
 
     .header__navigation{
@@ -110,7 +114,7 @@
         color: #000000;
     }
     .header__navigation > ul > a:hover{
-        color: gray;
+        color: #F652A0;
         transition: all 0.1s ease-in;
         text-decoration: none;
     }
