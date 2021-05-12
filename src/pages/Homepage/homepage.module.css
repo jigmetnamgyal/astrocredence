@@ -3,7 +3,7 @@
     width: 100vw;
     height: 600px;
     display: flex;
-    justify-content:center;
+    /* justify-content:center; */
     background: transparent;
     flex-direction: column;
     align-items: center;
@@ -12,4 +12,23 @@
     padding-top: 100px;
     /* background: #0f0f0f url('../../assets/sci/cool1.jpeg') no-repeat center; */
     background-size: cover;
+}
+.homeTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeTitle > h1{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 13px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.homeTitle > i > p{
+    font-size: 17px;
+    color: #C5926A;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
