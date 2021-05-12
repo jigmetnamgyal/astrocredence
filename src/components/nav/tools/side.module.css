@@ -6,10 +6,10 @@
     align-items: center;
     height: 100%;
     width: 200px;
-    background-color: #4C5270;
+    background-color: #C5926A;
     left: 0;
     top: 0;
-    box-shadow: 1px 0 7px #4c52708e;
+    box-shadow: 1px 0 7px #c5926a83;
     z-index: 200;
     transform: translateX(-100%);
     transition: all 0.1s ease-out;
@@ -25,6 +25,7 @@
     height: 50px;
     position: absolute;
     top: 0;
+    flex: 0.1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,13 +33,13 @@
 }
 .logo{
     padding-top: 19px;
-    color: #C5926A;
-    font-family: 'Open Sans Condensed', sans-serif;
+    color: #4C5270;
+    font-family: 'Oswald', sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
 }
 .cross{
-    color: #C5926A;
+    color: #4C5270;
     font-size: 15px;
     cursor: pointer;
     margin-top: 20px;
@@ -46,7 +47,7 @@
 }
 .sidebar > ul {
     display: flex;
-    height: 350px;
+    height: 250px;
     width: 150px;
     justify-content: space-between;
     flex-direction: column;
@@ -59,9 +60,25 @@
 }
 .sidebar > ul > li > a{
     text-decoration: none;
-    
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.socialMediaContainer{
+    margin-top: 100px;
+    display: flex;
+    width:60%;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.solmedia{
+    font-size: 22px;
+    color: #000;
+}
+.solmedia:hover{
+    color: #4C5270;
+}
 .sidebar > ul > li> a:hover, 
 .sidebar > ul > li> a:active {
     color: #4C5270;
@@ -69,7 +86,7 @@
 
 }
 .sidebar > ul > li > a {
-    color: #ffffff;
+    color: #000000;
 }
 
 @media screen and (min-width: 984px){

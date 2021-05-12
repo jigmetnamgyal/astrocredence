@@ -1,12 +1,8 @@
 import styles from './navbar.module.css';
 import Ham from './tools/hamBurger';
 import {Link} from 'react-router-dom';
-import {GoHome} from 'react-icons/go'
-import {BsInfoCircle} from 'react-icons/bs';
-import {MdPermContactCalendar} from 'react-icons/md';
-import { GiThreeFriends} from 'react-icons/gi';
-import {ImBlog} from 'react-icons/im';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo1.svg';
+import {AiOutlineInstagram, AiOutlineFacebook, AiOutlineTwitter} from 'react-icons/ai';
 
 const Navbar = ({hamHandler}) => {
     return (
@@ -20,13 +16,18 @@ const Navbar = ({hamHandler}) => {
                    
                 <nav className={styles.header__navigation}>
                     <ul>
-                        <Link to="/"><GoHome className={styles.icons} /> Home</Link>
-                        <Link to="/aboutUs"><BsInfoCircle className={styles.icons} /> About Us</Link>
-                        <Link to="/contactUs"><MdPermContactCalendar className={styles.icons} /> Contact Us</Link>
-                        <Link to="/projects"><ImBlog className={styles.icons} /> Blog</Link>
-                        <Link to="/newsletter"><GiThreeFriends className={styles.icons} /> Newsletter</Link>
+                        <Link to="/"> Home</Link>
+                        <Link to="/aboutUs">About Us</Link>
+                        <Link to="/contactUs">Contact Us</Link>
+                        <Link to="/projects">Blog</Link>
+                        <Link to="/newsletter">Newsletter</Link>
                     </ul>
                 </nav>
+                <div className={styles.socialMediaContainer}>
+                    <a className={styles.solmedia} href="htt" rel="noreferrer noopener"><AiOutlineInstagram /> </a>
+                    <a className={styles.solmedia} href="/" rel="noreferrer noopener"><AiOutlineFacebook /> </a>
+                    <a className={styles.solmedia} href="/" rel="noreferrer noopener"><AiOutlineTwitter /> </a>
+                </div>
         </header>
     )
 }

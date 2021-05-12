@@ -1,5 +1,5 @@
 .hamburger{
-    width: 45px;
+    width: 50px;
     height: 35px;
     border: none;
     background-color: transparent;
@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-   padding-left: 10px;
+    padding-left:20px;
 }
 .hamburger:focus{
     outline: none;
@@ -16,7 +16,7 @@
     width: 50%;
 }
 .hamLine{
-    font-size: 60px;
-    color: #C5926A; 
+    font-size: 30px;
+    color: #4C5270; 
     
 }
