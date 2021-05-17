@@ -24,7 +24,7 @@ const Navbar = ({hamHandler}) => {
                     </ul>
                 </nav>
                 <div className={styles.socialMediaContainer}>
-                    <a className={styles.solmedia} href="htt" rel="noreferrer noopener"><AiOutlineInstagram /> </a>
+                    <a className={styles.solmedia} href="https://www.instagram.com/astrocredence/" target="_blank" rel="noreferrer noopener"><AiOutlineInstagram /> </a>
                     <a className={styles.solmedia} href="/" rel="noreferrer noopener"><AiOutlineFacebook /> </a>
                     <a className={styles.solmedia} href="/" rel="noreferrer noopener"><AiOutlineTwitter /> </a>
                 </div>

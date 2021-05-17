@@ -7,7 +7,7 @@
     background: transparent;
     flex-direction: column;
     align-items: center;
-    background-color: #4C5270;
+    background-color: #29A0B1;
     /* z-index:200; */
     padding-top: 100px;
     /* background: #0f0f0f url('../../assets/sci/cool1.jpeg') no-repeat center; */
@@ -29,6 +29,6 @@
 
 .homeTitle > i > p{
     font-size: 17px;
-    color: #C5926A;
+    color: #000000;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
