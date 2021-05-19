@@ -1,34 +1,91 @@
 .homepageContainer{
     position: relative;
     width: 100vw;
-    height: 600px;
     display: flex;
-    /* justify-content:center; */
     background: transparent;
     flex-direction: column;
     align-items: center;
     background-color: #29A0B1;
-    /* z-index:200; */
     padding-top: 100px;
-    /* background: #0f0f0f url('../../assets/sci/cool1.jpeg') no-repeat center; */
     background-size: cover;
+    justify-items: center;
 }
 .homeTitle{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: 100%;
+    height: 650px;
+}
+.thisContains{
+    margin-top: -90px;
 }
 
-.homeTitle > h1{
-    font-family: 'Oswald', sans-serif;
+.thisContains > h1{
+    /* font-family: 'Poppins', serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    /* font-family: 'Titillium Web', sans-serif; */
     letter-spacing: 13px;
     margin-bottom: 20px;
     color: #ffffff;
+    /* color: #000; */
+    font-size: 60px;
+    line-height: 70px;
+    
 }
 
-.homeTitle > i > p{
+.titleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0.56;
+    height:600px;
+}
+
+.thisContains > i > p{
     font-size: 17px;
     color: #000000;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Play Display', sans-serif;
+    margin-bottom: 20px;
+}
+
+.imgRepresentUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    flex: 0.4;
+    padding-right:100px;
+}
+
+.ourPic{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.btnexplore{
+    border: 2px solid #ffffff !important;
+    /* background-color: # !important; */
+    color: #ffffff !important;
+    margin-top: 30px !important;
+    padding: 10px 50px !important;
+}
+
+.btnexplore:hover{
+    background-color: transparent !important;
+    color: #000000 !important;
+}
+
+.secondPart{
+    height: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
