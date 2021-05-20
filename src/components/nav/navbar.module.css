@@ -54,7 +54,8 @@
 }
 .header__navigation > ul > a{
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Istok Web', sans-serif;
     letter-spacing: 4px;
     font-weight: bolder;
     
@@ -128,7 +129,7 @@
         color: black;
     }
     .header__navigation > ul > a:hover{
-        color: #F652A0;
+        color: #29A0B1;
         transition: all 0.1s ease-in;
         text-decoration: none;
     }
@@ -155,7 +156,7 @@
         color:black;
     }
     .solmedia:hover{
-        color: #F652A0;
+        color: #29A0B1;
     }
     
 }

@@ -1,0 +1,230 @@
+.footer {
+    position: relative;
+    background-color: #ffffff;
+    /* padding: 10px; */
+    width: 100vw;
+    /* height: 50px; */
+    z-index: 200000;
+}
+.imgLogo{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* background-position: left; */
+    margin-top: 20px;
+}
+.titleHolder{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    padding-top: 10px;
+}
+.titleHolder > h5{
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.footerChildOneContainer {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 40px; */
+    height: auto;
+    border-top: 1px #29A0B1 solid;
+    padding:30px;
+    /* padding-top: 30px; */
+    margin-top: 40px;
+    background-color: #29A0B1;
+}
+
+.footerOne {
+    width: 100%;
+    flex: 0.35;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: -35px;
+}
+.footerOne > p {
+    font-size: 15px;
+    margin-top: 20px;
+    color: lightgray;
+}
+.footerOne > h4 {
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.footerOne > h4 > span {
+    color: #ffffff;
+}
+.footerOneMediaContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.footerOneMediaContainer > a {
+    color: #ffffff;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.footerTwo {
+    flex: 0.25;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.footerTwo > h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.footerTwo > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 25px;
+}
+.footerTwo > a:hover {
+    text-decoration: none;
+    color: lightblue;
+}
+
+
+.footerFour {
+    flex: 0.25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 95px; */
+}
+.footerFour > h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.footerFour > a {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+}
+.footerFour > a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+.footerChildTwoContainer {
+    display: flex;
+    /* justify-content: center; */
+    height: 100%;
+    /* justify-content: space-between; */
+    padding: 10px 0;
+    background-color: #29A0B1;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+}
+.footerTwoContainer {
+    flex: 0.5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+.footerTwoContainer > p {
+    color: #ffffff;
+    font-size: 12px;
+}
+.footerTwoStats {
+    flex: 0.5;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.footerTwoStats > p {
+    margin-right: 20px;
+    align-items: center;
+    font-weight: 600;
+}
+.footerTwoStats > p > span {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 854px) {
+    .footerOne > p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    .footerOne > h4, .footerTwo > h4, .footerThree > h4, .footerFour > h4 {
+      font-size: 20px;
+    }
+    .footerTwo > a, 
+    .footerFour > a{
+        font-size: 12px;
+    }
+
+    .footerChildTwoContainer{
+        justify-content: space-between;
+    }
+    .footerTwoContainer{
+        font-size: 12px;
+    }
+
+    .footerTwoStats > p {
+        font-size: 12px;
+    }
+
+  }
+
+  @media only screen and (max-width: 685px) {
+    .footerChildOneContainer {
+        height: auto;
+    }
+    .imgLogo{
+        width: 50px;
+        height: 50px;
+    }
+    .titleHolder > h4{
+        font-size: 20px;
+    }
+    .footerChildOneContainer {
+        flex-direction: column;
+    }
+    .footerOne {
+        width: 100%;
+        flex: 1;
+        height: auto;
+    }
+    .footerTwo, .footerTwo, .footerFour {
+        flex: 1;
+        align-items: flex-start;
+        margin-top: 20px;
+        padding-top: 0px;
+        
+    }
+   
+  }
+  @media only screen and (max-width: 456px) {
+    .footerChildTwoContainer{
+        flex-direction: column;
+    }
+    .footerTwoContainer{
+       width: 100%;
+    }
+
+    .footerTwoStats > p {
+        width: 100%;
+        font-size: 16px;
+    }
+  }

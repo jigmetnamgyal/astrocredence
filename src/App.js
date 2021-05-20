@@ -6,7 +6,8 @@ import Blog from './pages/Blog/Blog';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Newsletter from './pages/Newsletter/Newsletter';
 import NavBar from './components/nav/NavigationBar';
-import SideBar from './components/SideBar/Sidebar';
+
+
 
 import './App.css'
 function App() {
