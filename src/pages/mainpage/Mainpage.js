@@ -4,7 +4,7 @@ import {Carousel} from 'react-bootstrap'
 import one from '../../assets/reflect-campaign_desktop_green.jpeg';
 import two from '../../assets/reflect-campaign_desktop_red.jpeg';
 import three from '../../assets/reflect-campaign_desktop_yellow.jpeg';
-import four from '../../assets/4.svg';
+import four from '../../assets/cool1.jpeg';
 import five from '../../assets/5.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -39,7 +39,7 @@ const Mainpage = () => {
                         {/* <Carousel.Item className={styles.ourPic}>
                             <img
                                 className="d-block w-100"
-                                src={one}
+                                src={four}
                                 alt="First slide"/>
                           
                         </Carousel.Item> */}
@@ -67,13 +67,13 @@ const Mainpage = () => {
                                 alt="Third slide"/>
 
                         </Carousel.Item> */}
-                        <Carousel.Item className={styles.ourPic}>
+                        {/* <Carousel.Item className={styles.ourPic}>
                             <img
                                 className="d-block w-100 h-100"
                                 src={five}
                                 alt="Third slide"/>
 
-                        </Carousel.Item>
+                        </Carousel.Item> */}
                     </Carousel>
             </div>
             <div className={styles.secondPart}>
