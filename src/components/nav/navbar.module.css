@@ -56,7 +56,7 @@
     text-decoration: none;
     /*font-family: 'Oswald', sans-serif;*/
     font-family: 'Istok Web', sans-serif;
-    letter-spacing: 4px;
+    /* letter-spacing: 4px; */
     font-weight: bolder;
     
 }
@@ -114,7 +114,7 @@
         letter-spacing: 2px;
         height: 13vh;
         /* background-color: #000000; */
-        flex: 0.34;
+        flex: 0.4;
     }
     .header__navigation{
         display: flex;
@@ -124,8 +124,17 @@
         height: 100%;
         z-index: 10000000;
     }
+    .header__navigation > ul {
+        /* background-color: green; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0 !important;
+    }
     .header__navigation > ul > a{
-        margin: 0 15px;
+        /* margin: 0 15px; */
         color: black;
     }
     .header__navigation > ul > a:hover{

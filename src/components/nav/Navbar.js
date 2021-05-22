@@ -1,8 +1,8 @@
+import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/logo1.svg';
 import styles from './navbar.module.css';
 import Ham from './tools/hamBurger';
-import {Link} from 'react-router-dom';
-import logo from '../../assets/logo1.svg';
-import {AiOutlineInstagram, AiOutlineFacebook, AiOutlineTwitter} from 'react-icons/ai';
 
 const Navbar = ({hamHandler}) => {
     return (
