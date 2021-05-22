@@ -6,7 +6,7 @@ import Blog from './pages/Blog/Blog';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Newsletter from './pages/Newsletter/Newsletter';
 import NavBar from './components/nav/NavigationBar';
-
+import Mainpage from './pages/mainpage/Mainpage';
 
 
 import './App.css'
@@ -21,7 +21,7 @@ function App() {
             <div className="App">
               <NavBar />
                 <Switch>
-                    <Route exact path="/" component={Homepage}/>
+                    <Route exact path="/" component={Mainpage}/>
                     <Route path="/aboutUs" component={AboutUs}/>
                     <Route path="/blog" component={Blog}/>
                     <Route path="/contactUs" component={ContactUs}/>

@@ -1,0 +1,105 @@
+.mainpageContainer{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    background-size: cover;
+    justify-items: center;
+} 
+.topContainer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:auto;
+}
+
+.caroContainer{
+    position: relative;
+    /* padding-top: 30px; */
+    /* margin-top: 8px; */
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.ourPic{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.secondPart{
+    height:500px;
+    width: 100%;
+    /* background-color: #29A0B1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondPart > div {
+    width:400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.contentForUs{
+    position: absolute;
+    z-index: 1000;
+    /* background-color: #29A0B1; */
+    max-width: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    top: 28%;
+    left: 50px;
+}
+
+.contentForUs > h1{
+    /* font-family: 'Poppins', serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /*font-family: 'Heebo', sans-serif;*/
+    font-family: 'Istok Web', sans-serif;
+    font-weight: bold;
+    /* font-family: 'Titillium Web', sans-serif; */
+    letter-spacing: 8px;
+    /* margin-bottom: 20px; */
+    color: #ffffff;
+    
+    /* color: #000; */
+    font-size: 50px;
+    line-height: 70px;
+    
+}
+.contentForUs > p{
+    font-size: 25px;
+    color: #000000;
+    /*font-family: 'Play Display', sans-serif;*/
+    font-family: 'Istok Web', sans-serif;
+    margin-bottom: 20px;
+}
+.btnexplore{
+    border: 2px solid #000000 !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    margin-top: 10px !important;
+    padding: 10px 50px !important
+}
+.btnexplore:hover{
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+.targetDesc{
+    font-size: 17px !important;
+    color: #ffffff !important;
+}
