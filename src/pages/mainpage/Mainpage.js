@@ -10,6 +10,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'
 import {Link} from 'react-router-dom'
 import Button from '@material-ui/core/Button';
+import Thridpart from '../../components/thridPart/Thridpart';
 
 const Mainpage = () => {
     const [index, setIndex] = useState(0);
@@ -79,6 +80,7 @@ const Mainpage = () => {
             <div className={styles.secondPart}>
                 <div data-aos="flip-up"><h1>Hello, World!</h1></div>
             </div>
+            <Thridpart />
         </div>
     )
 }
