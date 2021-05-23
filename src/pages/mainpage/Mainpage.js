@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import styles from './mainpage.module.css';
 import {Carousel} from 'react-bootstrap'
-import one from '../../assets/reflect-campaign_desktop_green.jpeg';
+import one from '../../assets/1.png';
 import two from '../../assets/reflect-campaign_desktop_red.jpeg';
 import three from '../../assets/reflect-campaign_desktop_yellow.jpeg';
 import four from '../../assets/cool1.jpeg';
@@ -37,13 +37,13 @@ const Mainpage = () => {
                         </Link>
                 </div>
             <Carousel className={styles.caroContainer} fade activeIndex={index} onSelect={handleSelect} controls={false} indicators={false} interval={1500}>
-                        {/* <Carousel.Item className={styles.ourPic}>
+                        <Carousel.Item className={styles.ourPic}>
                             <img
                                 className="d-block w-100"
-                                src={four}
+                                src={one}
                                 alt="First slide"/>
                           
-                        </Carousel.Item> */}
+                        </Carousel.Item>
                         <Carousel.Item className={styles.ourPic}>
                             <img
                                 
