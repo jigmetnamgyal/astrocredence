@@ -4,7 +4,7 @@ import {Carousel} from 'react-bootstrap'
 import one from '../../assets/1.png';
 import two from '../../assets/reflect-campaign_desktop_red.jpeg';
 import three from '../../assets/reflect-campaign_desktop_yellow.jpeg';
-import four from '../../assets/cool1.jpeg';
+import four from '../../assets/4.png';
 import five from '../../assets/5.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -44,6 +44,7 @@ const Mainpage = () => {
                                 alt="First slide"/>
                           
                         </Carousel.Item>
+
                         <Carousel.Item className={styles.ourPic}>
                             <img
                                 
@@ -53,6 +54,7 @@ const Mainpage = () => {
 
                         
                         </Carousel.Item>
+                        
                         <Carousel.Item className={styles.ourPic}>
                             <img
                                 className="d-block w-100 "

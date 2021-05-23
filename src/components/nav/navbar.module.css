@@ -10,10 +10,17 @@
     margin: 0 auto;
     /* padding-top: 20px; */
     /* backdrop-filter: blur(10px); */
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.918);
    /* border-bottom: 2px solid #29A0B1; */
+   transition: all 0.3s ease-in-out;
 }
-
+.header__scrolled .header__logo{
+    height: 7vh;
+    transition: all 0.2 ease-in-out;
+}
+.header__scrolled {
+    height: 8vh;
+}
 .socialMediaContainer{
     display: none;
 }

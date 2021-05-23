@@ -1,3 +1,4 @@
+import {useState, useEffect} from 'react';
 import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo1.svg';
@@ -5,8 +6,23 @@ import styles from './navbar.module.css';
 import Ham from './tools/hamBurger';
 
 const Navbar = ({hamHandler}) => {
+
+    const [handleShow, setHandleShow] = useState(false);
+    useEffect(()=>{
+        window.addEventListener('scroll', ()=> {
+            if(window.scrollY > 350){
+                setHandleShow(true)
+            }else{
+                setHandleShow(false)
+            }
+        })
+        return () => {
+            window.removeEventListener('scroll', null);
+        };
+    }, [])
+
     return (
-        <header className={styles.navBar}>
+        <header className={`${styles.navBar} ${handleShow && styles.header__scrolled}`}>
                 <div className={styles.hamHolder}>
                     <Ham click = {hamHandler}/>
                 </div>

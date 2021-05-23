@@ -111,9 +111,7 @@
     color: #ffffff !important;
 }
 
-@media only screen and (max-width: 1175px){
-    
-}
+
 @media only screen and (max-width: 980px){
     .contentForUs > h1{
         letter-spacing: 8px;

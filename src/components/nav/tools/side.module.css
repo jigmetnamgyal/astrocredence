@@ -6,10 +6,10 @@
     align-items: center;
     height: 100%;
     width: 200px;
-    background-color: #98D7C2;
+    background-color: #E7F2F8;
     left: 0;
     top: 0;
-    box-shadow: 1px 0 7px #c5926a83;
+    box-shadow: 1px 0 7px #ffffffbb;
     z-index: 200;
     transform: translateX(-100%);
     transition: all 0.1s ease-out;
@@ -32,7 +32,7 @@
     padding: 15px;
 }
 .logo{
-    padding-top: 19px;
+    padding-top: 32px;
     color: #4C5270;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
