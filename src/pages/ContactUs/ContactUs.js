@@ -1,6 +1,7 @@
+import { Button } from '@material-ui/core';
+import { useState } from 'react';
+import contat from '../../assets/contactus.svg';
 import styles from './contactus.module.css';
-import {Button} from '@material-ui/core'
-import {useState} from 'react'
 
 const ContactUs = () => {
 
@@ -25,10 +26,14 @@ const ContactUs = () => {
     return (
         <div className={styles.contactUsContainer}>
             <div className={styles.contactUsTitleHolder}>
-                <p>Got a Questions</p>
-                <h3>Contact Us</h3>
-                <p className={styles.titleContent}>We’re here to help and answer any question
+                <div className={styles.contactz}>
+                    <p>Got a Questions</p>
+                    <h3>Contact Us</h3>
+                    <p className={styles.titleContent}>We’re here to help and answer any question
                     you might have. We look forward to hearing from you 🙂</p>
+                </div>
+                
+                <img className={styles.imgContact} src={contat} alt="Contact Us" />
             </div>
 
             <form className={styles.formContainer}>

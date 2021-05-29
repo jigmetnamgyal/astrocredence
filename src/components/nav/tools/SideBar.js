@@ -13,7 +13,7 @@ const SideBar = ({close, show}) => {
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/aboutUs">About Us</Link></li>
-                <li><Link to="/Contact Us"> Contact Us</Link></li>
+                <li><Link to="/ContactUs"> Contact Us</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
                 <li><Link to="/newsletter">Newsletter</Link></li>
             </ul>

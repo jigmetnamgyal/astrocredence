@@ -26,8 +26,8 @@ const Navbar = ({hamHandler}) => {
                 <div className={styles.hamHolder}>
                     <Ham click = {hamHandler}/>
                 </div>
-                <div className={styles.navbarLogo}>
-                    <img className={styles.astroCLogo} src={logo} alt="Astro Credence Logo"/>
+               <div className={styles.navbarLogo}>
+               <img className={styles.astroCLogo} src={logo} alt="Astro Credence Logo"/>
                 </div>
                    
                 <nav className={styles.header__navigation}>
