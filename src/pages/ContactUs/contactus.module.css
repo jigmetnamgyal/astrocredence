@@ -4,14 +4,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 16vh;
+    padding-top: 13vh;
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
-    background-color: #E7F2F8;
+
+    /* background-color: #546cdf; */
+
 }
 .contactUsTitleHolder {
-    color: #000000;
+    /* color: #000000; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +21,7 @@
     width: 95%;
     height: 100%;
     flex: 0.5;
+    /* color: #fff; */
 }
 .contactz {
     /* background-color:pink; */
@@ -30,6 +33,12 @@
 .contactz > p {
     font-weight: bold;
     font-size: 15px;
+}
+.spanOne{
+    background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 .imgContact {
     width: 100px;
@@ -110,7 +119,7 @@
         margin-top: 30px !important;
         padding: 15px !important;
     }
-   
+
     .imgContact {
         width: 200px;
         height: 200px;

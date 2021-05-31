@@ -28,7 +28,7 @@ const ContactUs = () => {
             <div className={styles.contactUsTitleHolder}>
                 <div className={styles.contactz}>
                     <p>Got a Questions</p>
-                    <h3>Contact Us</h3>
+                    <h3><span className={styles.spanOne}>Contact Us</span></h3>
                     <p className={styles.titleContent}>We’re here to help and answer any question
                     you might have. We look forward to hearing from you 🙂</p>
                 </div>
