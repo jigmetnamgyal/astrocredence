@@ -22,7 +22,7 @@ const Mainpage = () => {
     useEffect(() => {
         Aos.init({duration: 1000});
     }, [])
-
+    
     return (
         <div className={styles.mainpageContainer}>
             <div className={styles.topContainer}>
