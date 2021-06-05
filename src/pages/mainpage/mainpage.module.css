@@ -22,9 +22,6 @@
 
 .caroContainer{
     position: relative;
-    /* padding-top: 30px; */
-    /* margin-top: 8px; */
-    /* background-color: pink; */
     display: flex;
     justify-content: center;
     align-items: center;

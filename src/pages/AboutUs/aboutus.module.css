@@ -1,0 +1,13 @@
+.aboutuscontainer{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    justify-items: center;
+    padding-top: 20px;
+    height: 100vh;
+} 
