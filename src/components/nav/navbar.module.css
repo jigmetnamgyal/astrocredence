@@ -58,6 +58,7 @@
 
 .header__navigation {
     display: none;
+    /* background-color: #000000; */
 }
 .header__navigation > ul > a {
     text-decoration: none;
@@ -121,7 +122,7 @@
         letter-spacing: 2px;
         height: 13vh;
         /* background-color: #000000; */
-        flex: 0.4;
+        flex: 0.3;
     }
     .header__navigation {
         display: flex;

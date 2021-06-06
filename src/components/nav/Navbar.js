@@ -37,6 +37,7 @@ const Navbar = ({hamHandler}) => {
                         <Link to="/contactUs">Contact Us</Link>
                         <Link to="/projects">Blog</Link>
                         <Link to="/newsletter">Newsletter</Link>
+                        <Link to="/shop">Shop</Link>
                     </ul>
                 </nav>
                 <div className={styles.socialMediaContainer}>
