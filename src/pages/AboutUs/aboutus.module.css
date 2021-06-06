@@ -1,0 +1,136 @@
+.about{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    background-size: cover;
+    justify-items: center;
+
+}
+.aboutContent{
+    background: url("https://images.prismic.io/clubhouse/fc3d0d80-44ce-43f2-b072-b3999c9d30d0_careers_hero_v3.png?auto=format%2Ccompress&rect=0%2C0%2C2710%2C1350&w=339&h=169&fit=max&q=50 339w, https://images.prismic.io/clubhouse/fc3d0d80-44ce-43f2-b072-b3999c9d30d0_careers_hero_v3.png?auto=format%2Ccompress&rect=0%2C0%2C2710%2C1350&w=678&h=338&fit=max&q=50 678w, https://images.prismic.io/clubhouse/fc3d0d80-44ce-43f2-b072-b3999c9d30d0_careers_hero_v3.png?auto=format%2Ccompress&rect=0%2C0%2C2710%2C1350&w=1355&h=675&fit=max&q=50 1355w, https://images.prismic.io/clubhouse/fc3d0d80-44ce-43f2-b072-b3999c9d30d0_careers_hero_v3.png?auto=format%2Ccompress&rect=0%2C0%2C2710%2C1350&w=2033&h=1012&fit=max&q=50 2033w, https://images.prismic.io/clubhouse/fc3d0d80-44ce-43f2-b072-b3999c9d30d0_careers_hero_v3.png?auto=format%2Ccompress&rect=0%2C0%2C2710%2C1350&w=2710&h=1350&fit=max&q=50 2710w") no-repeat;
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    /* background-color: #546cdf; */
+    color: white;
+    /* padding-top: 120px; */
+    background-color: #546cdf;
+}
+.aboutContentTitle{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    /* padding-top: 200px; */
+   
+   
+}
+.aboutContentTitle > h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    /* padding-top: 60px; */
+   
+}
+.aboutContentTitle > p{
+    text-align: center;
+    margin: 20px 0;
+}
+.supportBtn{
+    background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb) !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    margin-top: 10px !important;
+}
+.aboutContentTitle > a:hover{
+    text-decoration: none;
+}
+.meetTeam {
+    width: 100%;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-size: 200px;
+    
+    background-position: center;
+    color: white;
+    
+}
+.meetTeam > div > h1{
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cone{
+    font-size: 50px;
+    color: yellow;
+    /* margin-top: -10px; */
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.teamProfile{
+    display: flex;
+    margin-top: 50px;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    background-color: tomato;
+    padding: 15px;
+}
+
+
+@media only screen and (max-width: 630px) {
+    .aboutContent{
+        height: 100vh;
+        /* padding: 50px; */
+        background-position: bottom;
+    }
+    .teamProfile > h1{
+        font-size: 20px;
+    }
+    .meetTeam {
+        padding-top: 0px;
+        height: 400px;
+    }
+  }
+
+@media only screen and (max-width: 525px) {
+    .aboutContentTitle > h1{
+        font-size: 20px;
+    }
+    .aboutContentTitle > p{
+        font-size: 15px;
+    }
+    .supportBtn{
+        background-color: #8BD8BD !important;
+        padding: 8px 15px !important;
+        font-size: 12px !important;
+    }
+}
+
+
+  @media only screen and (max-width: 456px) {
+    .teamProfile > h1{
+        font-size: 10px;
+    }
+   
+  }
