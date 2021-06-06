@@ -9,7 +9,7 @@ const ContactUs = () => {
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-
+    const emailAddress = "astrocredence7@gmail.com"
     const firstNameHandle = e => {
         setFirstname(e.target.value);
     }
@@ -21,6 +21,17 @@ const ContactUs = () => {
     }
     const messageHandle = e => {
         setMessage(e.target.value);
+    }
+
+    const handleClick = e => {
+        e.preventDefault();
+        window.open(
+            `mailto:${emailAddress}?subject=Question&body=Name: ${firstName} ${lastName}|| Email: ${email}|| Message: ${message}`
+        );
+        setMessage("")
+        setEmail("")
+        setFirstname("")
+        setLastName("")
     }
 
     return (
@@ -82,7 +93,7 @@ const ContactUs = () => {
                         aria-describedby="emailHelp"/>
 
                 </div>
-                <Button className={styles.contactUsButton}>Send Message</Button>
+                <Button className={styles.contactUsButton} onClick={handleClick}>Send Message</Button>
             </form>
         </div>
     )
