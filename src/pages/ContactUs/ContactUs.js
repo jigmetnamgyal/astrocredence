@@ -27,13 +27,11 @@ const ContactUs = () => {
         <div className={styles.contactUsContainer}>
             <div className={styles.contactUsTitleHolder}>
                 <div className={styles.contactz}>
-                    <p>Got a Questions</p>
-                    <h3><span className={styles.spanOne}>Contact Us</span></h3>
-                    <p className={styles.titleContent}>We’re here to help and answer any question
-                    you might have. We look forward to hearing from you 🙂</p>
+                    <p>Got a Questions? Contact Us</p>
+                   
+                    <p className={styles.titleContent}>We’re here to help and answer any question 
+                    you might have. We look forward to hearing from you</p>
                 </div>
-                
-                <img className={styles.imgContact} src={contat} alt="Contact Us" />
             </div>
 
             <form className={styles.formContainer}>

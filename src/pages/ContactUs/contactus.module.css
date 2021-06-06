@@ -35,9 +35,7 @@
     font-size: 15px;
 }
 .spanOne{
-    background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    
     font-weight: bold;
 }
 .imgContact {
@@ -52,6 +50,10 @@
     text-align: center;
     margin-top: 15px;
     margin-bottom: 20px;
+    background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 .formContainer {
     margin: 0 auto;
@@ -87,6 +89,13 @@
 }
 
 @media only screen and (min-width: 769px) {
+    .contactz{
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+    .contactz > p{
+        font-size: 25px;
+    }
     .contactUsTitleHolder {
         flex: 0.9;
         padding-right: 50px;
@@ -127,8 +136,13 @@
     }
     .titleContent {
         /* color: white; */
-        text-align: center;
+        text-align: left;
+        font-size: 30px !important;
         margin-top: 15px;
         margin-bottom: 55px;
+        background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
     }
 }
