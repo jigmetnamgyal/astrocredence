@@ -3,7 +3,6 @@ import newsletter from '../../assets/newsletter.svg';
 import {Grid, TextField, Button} from '@material-ui/core'
 import {useState} from 'react';
 
-import { v4 as uuidv4 } from 'uuid';
 import thanks from '../../assets/thanks.svg';
 
 

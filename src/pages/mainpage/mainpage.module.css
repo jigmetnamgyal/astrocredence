@@ -102,7 +102,8 @@
     background-color: #000000 !important;
     color: #ffffff !important;
     margin-top: 10px !important;
-    padding: 10px 50px !important
+    padding: 10px 50px !important;
+    z-index: 100;
 }
 .btnexplore:hover{
     background-color: transparent !important;
@@ -112,6 +113,7 @@
 .targetDesc{
     font-size: 17px !important;
     color: #ffffff !important;
+    z-index: 100;
 }
 
 .secondPart > div > h1 {
@@ -189,6 +191,7 @@
     bottom: -10px;
     letter-spacing: 0;
     overflow: hidden;
+    z-index: 1;
   }
   
   .wave{
