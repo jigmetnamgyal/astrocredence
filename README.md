@@ -11,6 +11,8 @@
 
 This is code repository for a simple analytics visualization site for [Codeforces](http://codeforces.com/) online judge users using [Codeforces API](https://codeforces.com/apiHelp).
 
+This is code repository for a project that I am working. Astrocredence is a platform where your thoughts are shared, acknowledged and debated upon? A platform where you can portray yourself,your art and even sell it without the hassle of finding the right digital market?  
+
 ## Prerequisites:
 * Install git in your machine.
 * Have basic command line experiance.
