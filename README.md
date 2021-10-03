@@ -22,7 +22,7 @@ This is code repository for a project that I am working. Astrocredence is a plat
 
 1. Read this [guide](https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source) to open-source contribution.
 
-2. To add the necessary contribution that will get your Pull Request accepeted refer [CONTRIBUTING.md](https://github.com/) file.
+2. To add the necessary contribution that will get your Pull Request accepeted refer [CONTRIBUTING.md](https://github.com/JigmeT123/astrocredence/blob/master/CONTRIBUTING.md) file.
 
 ## Rules and Regulations
 
