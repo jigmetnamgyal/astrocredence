@@ -1,7 +1,7 @@
 # Welcome to Hacktoberfest 2021, Contributors  
 <a><img src="https://github.com/agniutkarsh/GitHubGraduation-2021/blob/main/Screenshot%202021-09-15%20at%2011.44.40%20AM.png" width="1000px"></a>
 
-# Codeforces-tracker
+# Astro Credence
 ![](https://img.shields.io/badge/Hactoberfest-%202021-brightgreen)
  ![GitHub forks](https://img.shields.io/github/forks/wasim7raja10/Codeforces-tracker?style=social)
  ![GitHub last commit](https://img.shields.io/github/last-commit/wasim7raja10/Codeforces-tracker?color=red&style=social)
