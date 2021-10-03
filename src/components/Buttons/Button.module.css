@@ -1,0 +1,19 @@
+.btn{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(70, 70, 252);
+    color: white;
+    border-radius: 7px;
+    padding: 12px;
+    font-size: small;
+    font-family: sans-serif;
+    font-weight: 600 ;
+    text-decoration: none;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: transparent;
+    border: 1.3px solid black;
+    color: black;
+}
