@@ -24,6 +24,22 @@ This is code repository for a project that I am working. Astrocredence is a plat
 
 2. To add the necessary contribution that will get your Pull Request accepeted refer [CONTRIBUTING.md](https://github.com/JigmeT123/astrocredence/blob/master/CONTRIBUTING.md) file.
 
+## Claim an Issue
+Comment on the issue. In case of no activity on the issue even after 2 days, the issue will be reassigned. If you have difficulty approaching the issue, feel free to ask on our slack channel.
+
+## Communication
+If you have any queries or suggestions, please use the discord channel of **Geek Editor FrontEnd**.
+
+
+### How to contribute?
+
+* Fork this repo
+* Create a new file in "Contributions" folder
+* Add any code in any language you like
+* Push PR
+* Follow Developer & Star the repo
+* All done!
+
 ## Rules and Regulations
 
 1. Pull requests can be submitted to any opted-in repository on GitHub or GitLab
