@@ -114,6 +114,18 @@
     border-radius: 0 !important;
 }
 
+.errorMessage {
+    color: red;
+    background-color: white;
+    font-size: 12px;
+}
+
+.submit {
+    background-color: #546cdf;
+    color: white;
+    font-size: 20px;
+}
+
 @media only screen and (min-width: 769px) {
     .contactz {
         align-items: flex-start;
