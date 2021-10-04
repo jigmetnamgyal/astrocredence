@@ -55,6 +55,10 @@
 
 }
 
+.style1{
+    border-bottom: red 2px solid;
+}
+
 .style:hover{
     border-bottom: #175de0 2px solid;
     
