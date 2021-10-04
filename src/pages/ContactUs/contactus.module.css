@@ -1,28 +1,44 @@
 .contactUsContainer {
     position: relative;
     height: auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 13vh;
-    flex-direction: column;
     padding-left: 0;
     padding-right: 0;
-
-    /* background-color: #546cdf; */
-
+    flex-direction: column;
+    background-image: url('../../assets/contact.jpg');
+    background-size: cover;
 }
+
+.contactUsBackground {
+    position: relative;
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #546cdf;
+}
+
 .contactUsTitleHolder {
     /* color: #000000; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 95%;
-    height: 100%;
+    width: auto;
+    height: auto;
     flex: 0.5;
+    margin: 10;
+    background-color: #546cdf;
+    box-shadow: 0px 0px 50px 1px black;
+    border-radius: 20px;
     /* color: #fff; */
 }
+
 .contactz {
     /* background-color:pink; */
     display: flex;
@@ -30,14 +46,17 @@
     align-items: center;
     flex-direction: column;
 }
-.contactz > p {
+
+.contactz>p {
     font-weight: bold;
     font-size: 15px;
+    color: white;
 }
-.spanOne{
-    
+
+.spanOne {
     font-weight: bold;
 }
+
 .imgContact {
     width: 100px;
     height: 100px;
@@ -50,11 +69,13 @@
     text-align: center;
     margin-top: 15px;
     margin-bottom: 20px;
-    background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb);
+    background-image: linear-gradient(104deg, #3ed4c9, #3dc8eb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    color: white;
 }
+
 .formContainer {
     margin: 0 auto;
     width: 80%;
@@ -63,21 +84,26 @@
     flex-direction: column;
     background-color: white;
     padding: 25px;
+    box-shadow: 0px 0px 50px 2px black;
+    border-radius: 30px;
     /* height: 90%; */
 }
+
 .formStyle {
     width: 100%;
 }
-.formStyle > label {
+
+.formStyle>label {
     color: #000000;
     margin-top: 20px;
 }
 
-.formStyle > input,
-.formStyle > textarea {
+.formStyle>input,
+.formStyle>textarea {
     border-radius: 0 !important;
     width: 100%;
 }
+
 .contactUsButton {
     background-color: black !important;
     color: white !important;
@@ -88,12 +114,24 @@
     border-radius: 0 !important;
 }
 
+.errorMessage {
+    color: red;
+    background-color: white;
+    font-size: 12px;
+}
+
+.submit {
+    background-color: #546cdf;
+    color: white;
+    font-size: 20px;
+}
+
 @media only screen and (min-width: 769px) {
-    .contactz{
+    .contactz {
         align-items: flex-start;
         padding-left: 30px;
     }
-    .contactz > p{
+    .contactz>p {
         font-size: 25px;
     }
     .contactUsTitleHolder {
@@ -106,7 +144,6 @@
         display: flex;
         flex-direction: column;
         background-color: white;
-
     }
     .contactUsContainer {
         flex-direction: row;
@@ -115,20 +152,17 @@
         padding-right: 40px;
         height: 100vh;
     }
-    .formStyle > label {
-
+    .formStyle>label {
         margin-top: 30px;
-
     }
-    .formStyle > input,
-    .formStyle > textarea {
+    .formStyle>input,
+    .formStyle>textarea {
         padding: 25px !important;
     }
     .contactUsButton {
         margin-top: 30px !important;
         padding: 15px !important;
     }
-
     .imgContact {
         width: 200px;
         height: 200px;
@@ -140,7 +174,7 @@
         font-size: 30px !important;
         margin-top: 15px;
         margin-bottom: 55px;
-        background-image: linear-gradient(104deg , #3ed4c9, #3dc8eb);
+        background-image: linear-gradient(104deg, #3ed4c9, #3dc8eb);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
