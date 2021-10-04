@@ -1,0 +1,125 @@
+
+footer{
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .footer-content{
+    overflow: hidden;
+    height: fit-content;
+  }
+  footer h1{
+    font-family: helvetica;
+    color: #000;
+    font-size: 26px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 300;
+  }
+  footer p{
+    color: #171717;
+    font-family: "Raleway", sans-serif;
+  }
+  .footer-txt{
+    padding: 50px 10px 0;
+  }
+  .footer-txt ul li{
+    margin-top: 5px;
+  }
+  .footer-txt ul{
+    list-style-type: none;
+  }
+  .s-icons{
+    float: right;
+    width: 100%;
+  }
+  .i-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 17%;
+  }
+  .footer-img{
+    margin: 0 auto;
+    width: 65%;
+  }
+  .footer-img img{
+    width: 100%;
+  }
+  .footer-copyright{
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* ----------------------------------------------------- */
+  
+  @media only screen and (min-width:768px){
+  
+    .footer-content{
+        height:270px;
+        width:100%;
+        padding: 0 50px 0; 
+    }
+  
+    .footer-txt{
+        width:fit-content;
+        float: left;
+    }
+  
+    .footer-img{
+        float: left;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+  
+    .footer-img img{
+        width:70%;
+    }
+  
+    .s-icons{
+      margin-top:100px;
+      width:50%;
+    }
+  
+  }
+  
+  @media only screen and (min-width:1000px){
+  
+    .footer-content{
+        width:80%;
+        margin: 0 auto;
+        height: 300px;
+    }
+  
+    .footer-txt{
+        padding: 50px 0 0;   
+    }
+  
+    .footer-img{
+        float: right;
+        margin-top: 25px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 70%;
+    }
+  
+    .footer-img img{
+        width:68%;
+    }
+  
+    .footer-copyright{
+        width:80%;
+        margin: 0 auto;
+    }
+  
+    .s-icons{
+      width:25%;
+    }
+  }
