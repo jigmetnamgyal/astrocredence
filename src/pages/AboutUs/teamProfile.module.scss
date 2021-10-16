@@ -1,0 +1,37 @@
+.memberCard {
+  margin: 10px 0;
+  background-color: transparent;
+  width: 100%;
+
+  @media screen and (min-width: 500px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 33.33%;
+  }
+}
+.memberCardContent {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+  }
+
+  .memberInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .memberName {
+      font-weight: 700;
+      color: #fff;
+    }
+    .memberRole {
+      color: #bcbcc6;
+    }
+  }
+}
