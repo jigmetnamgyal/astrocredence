@@ -1,157 +1,186 @@
-import { Button } from '@material-ui/core';
-import { useState } from 'react';
-import contat from '../../assets/contactus.svg';
-import styles from './contactus.module.css';
-import {useForm} from 'react-hook-form';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
+import { useState, memo } from "react";
+import styles from "./contactus.module.scss";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
+import Container from "@material-ui/core/Container";
+import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
+import SendIcon from "@material-ui/icons/Send";
+import Box from "@material-ui/core/Box";
+
+const INITIAL_STATE = {
+  fName: "",
+  lName: "",
+  email: "",
+  message: "",
+  emailAddress: "astrocredence7@gmail.com",
+};
 
 const ContactUs = () => {
+  const [firstName, setFirstname] = useState(INITIAL_STATE.fName);
+  const [lastName, setLastName] = useState(INITIAL_STATE.lname);
+  const [email, setEmail] = useState(INITIAL_STATE.email);
+  const [message, setMessage] = useState(INITIAL_STATE.message);
 
-    const [firstName, setFirstname] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-    const emailAddress = "astrocredence7@gmail.com"
+  // Error states
+  const [isFNameError, setFNameError] = useState(false);
+  const [isEmailError, setEmailError] = useState(false);
+  const [isMessageError, setMessageError] = useState(false);
 
-    // const firstNameHandle = e => {
-    //     setFirstname(e.target.value);
-        
-    // }
-    // const lastNameHandle = e => {
-    //     setLastName(e.target.value);
-    // }
-    // const emailHandle = e => {
-    //     setEmail(e.target.value);
-    // }
-    // const messageHandle = e => {
-    //     setMessage(e.target.value);
-    // }
-    const toastifySuccess = () => {
-        toast('Form sent!', {
-          position: 'bottom-right',
-          autoClose: 5000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,  
-          draggable: false,
-          className: styles.submit,
-          toastId: 'notifyToast'
-        });
-      };
-    
+  const handleFirstName = (evt) => {
+    setFirstname(evt.target.value);
+    setFNameError(false);
+  };
 
-    const {
-        register,
-        handleSubmit,
-        reset,
-        formState: { errors }
-      } = useForm();
+  const handleLastName = (evt) => {
+    setLastName(evt.target.value);
+  };
 
-      const onSubmit = async (data) => {
-        const { fname, lname ,email, message } = data;
-        
-         window.open(
-            `mailto:${emailAddress}?subject=Question&body=Name: ${fname} ${lname}|| Email: ${email}|| Message: ${message}`
-        );
+  const handleEmail = (evt) => {
+    setEmail(evt.target.value);
+    setEmailError(false);
+  };
 
-        toastifySuccess();
-      };
+  const handleMessage = (evt) => {
+    setMessage(evt.target.value);
+    setMessageError(false);
+  };
 
-    
-    
+  const toastifySuccess = () => {
+    toast("Form sent!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: false,
+      className: styles.submit,
+      toastId: "notifyToast",
+    });
+  };
 
-    return (
-        <div className="styles.contactUsBackground">
-            <div className={styles.contactUsContainer}>
-                <div className={styles.contactUsTitleHolder}>
-                    <div className={styles.contactz}>
-                        <p>Got a Questions? Contact Us</p>
-                    
-                        <p className={styles.titleContent}>We’re here to help and answer any question 
-                        you might have. We look forward to hearing from you</p>
-                    </div>
-                </div>
-               
-                <form className={styles.formContainer} onSubmit={handleSubmit(onSubmit)}noValidate>
-                    <div className={styles.formStyle}>
-                        <label for="exampleInputEmail1">First Name</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            {...register('fname', {
-                                required: { value: true, message: 'Please enter your name' },
-                                pattern: /^[a-zA-Z_]/,
-                                maxLength: {
-                                  value: 30,
-                                  message: 'Please use 30 characters or less'
-                                }
-                              })}
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"/>
-                             {errors.fname && <span className={styles.errorMessage}>{errors.fname.message}</span>}
-                            
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    let isError = false;
 
-                    </div>
+    if (!firstName) {
+      setFNameError(true);
+      isError = true;
+    }
+    if (!email) {
+      setEmailError(true);
+      isError = true;
+    }
+    if (!message) {
+      setMessageError(true);
+      isError = true;
+    }
 
-                    <div className={styles.formStyle}>
-                        <label for="exampleInputEmail1">Last Name</label>
-                        <input
-                            {...register('lname', {
-                                required: { value: true, message: 'Please enter your name' },
-                                pattern: /^[a-zA-Z_]/,
-                                maxLength: {
-                                  value: 30,
-                                  message: 'Please use 30 characters or less'
-                                }
-                              })}
-                            type="text"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"/>
-                            {errors.lname && <span className={styles.errorMessage}>{errors.lname.message}</span>}
+    if ( isError ) {
+      return;
+    } else {
+      window.open(
+        `mailto:${INITIAL_STATE.emailAddress}?subject=Question&body=Name: ${firstName} ${lastName}|| Email: ${email}|| Message: ${message}`
+      );
+  
+      toastifySuccess();
+    }
+  };
 
-                    </div>
+  return (
+    <Container maxWidth="lg" className={styles.contact}>
+      <section className={styles.contactHeading}>
+        <h3>Got a question?</h3>
 
-                    <div className={styles.formStyle}>
-                        <label for="exampleInputEmail1">Email</label>
-                        <input
-                             {...register('email', {
-                                required: true,
-                                pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-                              })}
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                            
-                            />
-                            {errors.email && (
-                      <span className={styles.errorMessage}>Please enter a valid email address</span>
-                    )}
+        <p>Fill the form and we'll get in touch with you at the earliest.</p>
+        <small>
+          <em>- Astrocredence</em>
+        </small>
+      </section>
 
-                    </div>
+      <section className={styles.contactForm}>
+        <form
+          className={styles.formContainer}
+          onSubmit={handleSubmit}
+          noValidate
+          autoComplete="off"
+        >
+          <TextField
+            id="input-fName"
+            label="First Name"
+            placeholder="E.g. John"
+            fullWidth
+            margin="normal"
+            InputLabelProps={{
+              shrink: true,
+            }}
+            value={firstName}
+            variant="outlined"
+            required
+            onChange={handleFirstName}
+            error={isFNameError}
+            helperText="Name is required"
+          />
 
-                    <div className={styles.formStyle}>
-                        <label for="exampleInputEmail1">Message</label>
-                        <textarea
-                            {...register('message', {
-                                required: true
-                              })}
-                            type="text"
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"/>
+          <TextField
+            id="input-lName"
+            label="Last Name"
+            placeholder="E.g. Doe"
+            fullWidth
+            margin="normal"
+            InputLabelProps={{
+              shrink: true,
+            }}
+            value={lastName}
+            variant="outlined"
+            onChange={handleLastName}
+          />
 
-                    </div>
-                    <ToastContainer  id="notifyToast"/>
-                    {errors.message && <span className={styles.errorMessage}>Please enter a message</span>}
-                    <Button className={styles.contactUsButton} type="submit"  >Send Message</Button>
-                </form>
-                
-            </div>
-        </div>
-    )
-}
+          <TextField
+            id="input-email"
+            label="Email Address"
+            placeholder="E.g. john.doe@example.com"
+            fullWidth
+            margin="normal"
+            InputLabelProps={{
+              shrink: true,
+            }}
+            value={email}
+            variant="outlined"
+            required
+            onChange={handleEmail}
+            error={isEmailError}
+            helperText="Email is required"
+          />
 
-export default ContactUs
+          <TextField
+            id="input-message"
+            label="Message"
+            fullWidth
+            placeholder="Enter your message here"
+            multiline
+            margin="normal"
+            maxRows={4}
+            value={message}
+            variant="outlined"
+            required
+            onChange={handleMessage}
+            error={isMessageError}
+            helperText="Message is required"
+          />
+
+          <ToastContainer id="notifyToast" />
+
+          <Box textAlign="right">
+            <Button type="submit" variant="contained" color="primary">
+              Send &nbsp;
+              <SendIcon />
+            </Button>
+          </Box>
+        </form>
+      </section>
+    </Container>
+  );
+};
+
+export default memo(ContactUs);
