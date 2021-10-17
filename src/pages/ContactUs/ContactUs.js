@@ -61,13 +61,16 @@ const ContactUs = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const emailPattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+
     let isError = false;
 
     if (!firstName) {
       setFNameError(true);
       isError = true;
     }
-    if (!email) {
+    if (!emailPattern.test(email)) {
+      console.log('here');
       setEmailError(true);
       isError = true;
     }
@@ -119,7 +122,7 @@ const ContactUs = () => {
             required
             onChange={handleFirstName}
             error={isFNameError}
-            helperText="Name is required"
+            helperText="Name cannot be empty"
           />
 
           <TextField
@@ -137,6 +140,7 @@ const ContactUs = () => {
           />
 
           <TextField
+            type="email"
             id="input-email"
             label="Email Address"
             placeholder="E.g. john.doe@example.com"
@@ -150,7 +154,7 @@ const ContactUs = () => {
             required
             onChange={handleEmail}
             error={isEmailError}
-            helperText="Email is required"
+            helperText="Email address should be valid"
           />
 
           <TextField
@@ -160,13 +164,12 @@ const ContactUs = () => {
             placeholder="Enter your message here"
             multiline
             margin="normal"
-            maxRows={4}
             value={message}
             variant="outlined"
             required
             onChange={handleMessage}
             error={isMessageError}
-            helperText="Message is required"
+            helperText="Message cannot be empty"
           />
 
           <ToastContainer id="notifyToast" />
