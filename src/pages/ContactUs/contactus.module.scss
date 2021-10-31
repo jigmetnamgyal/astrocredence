@@ -1,0 +1,66 @@
+$background: #0b0b11;
+$text-primary: #fff;
+$text-secondary: #bcbcc6;
+
+@mixin d-flex {
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.contact {
+  height: 100vh;
+  @include d-flex();
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 13vh;
+  background-image: url("../../assets/contact.jpg");
+  background-position: center center;
+  background-size: contain;
+
+  .contactHeading {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: #000;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 769px) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 400px;
+    }
+
+    h3 {
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .contactForm {
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    @media screen and (min-width: 769px) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 400px;
+    }
+  }
+}
